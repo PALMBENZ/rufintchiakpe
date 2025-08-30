@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maître Ruffin TCHIAKPE — Avocat aux Barreaux de Cotonou & Porto‑Novo | Droit immobilier, recouvrement de loyers, droit commercial, droit pénal</title>
+  <meta name="description" content="Avocat aux Barreaux de Cotonou et Porto‑Novo. Droit immobilier, recouvrement de dettes de loyer, droit commercial et droit pénal. Rendez‑vous et consultations.">
+  <style>
+    :root{
+      --bg:#0b1320;
+      --panel:#0f172a;
+      --ink:#e5e7eb;
+      --muted:#9aa4b2;
+      --ring:rgba(148,163,184,.3);
+      --gold:#fbbf24;
+      --accentA: rgba(56,189,248,.18);
+      --accentB: rgba(34,197,94,.18);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+      color:var(--ink);
+      background:
+        radial-gradient(1000px 500px at 15% 10%, rgba(56,189,248,.08), transparent 60%),
+        radial-gradient(1000px 500px at 85% 15%, rgba(251,191,36,.10), transparent 60%),
+        var(--bg);
+    }
+    a{color:#fff}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .card{
+      background:rgba(15,23,42,.75);
+      backdrop-filter:saturate(140%) blur(6px);
+      border:1px solid var(--ring);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:0 20px 60px rgba(0,0,0,.45);
+    }
+    header.site{
+      display:flex;align-items:center;gap:16px;flex-wrap:wrap
+    }
+    .crest{
+      width:68px;height:68px;border-radius:16px;display:grid;place-items:center;
+      background: conic-gradient(from 180deg at 50% 50%, rgba(251,191,36,.25), rgba(56,189,248,.25));
+      border:1px solid rgba(251,191,36,.45);
+      box-shadow: 0 10px 30px rgba(251,191,36,.15), inset 0 0 24px rgba(56,189,248,.12);
+    }
+    .crest svg{width:36px;height:36px;opacity:.95}
+    h1{margin:0;font-size:clamp(28px,5vw,44px);letter-spacing:.01em}
+    .subtitle{margin-left:auto;border:1px solid var(--ring);border-radius:999px;padding:8px 12px;font-size:14px;background:linear-gradient(135deg,var(--accentA),var(--accentB));white-space:nowrap}
+    nav{margin-top:12px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border:1px solid var(--ring);border-radius:999px;text-decoration:none;color:var(--ink)}
+    .divider{height:1px;background:linear-gradient(90deg,transparent,var(--ring),transparent);margin:14px 0 10px}
+    .hero{
+      display:grid;grid-template-columns: 1.4fr .9fr;gap:20px;align-items:center;margin-top:10px
+    }
+    .hero p{font-size:clamp(16px,2.1vw,19px);line-height:1.65;margin:0}
+    .cta{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:14px;border:1px solid var(--ring);text-decoration:none;color:#fff;font-weight:600;background:linear-gradient(135deg, rgba(34,197,94,.25), rgba(56,189,248,.25))}
+    .btn.secondary{background:linear-gradient(135deg, rgba(56,189,248,.18), rgba(251,191,36,.22))}
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ring);padding:6px 10px;border-radius:999px;font-size:13px;color:#fef3c7;background:rgba(251,191,36,.12);margin-top:6px}
+    h2{font-size:clamp(22px,3.6vw,28px);margin:0 0 12px}
+    .grid{display:grid;gap:14px;grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));}
+    .tile{border:1px solid var(--ring);border-radius:16px;padding:16px;background:linear-gradient(135deg, rgba(2,6,23,.5), rgba(15,23,42,.6))}
+    .tile h3{margin:0 0 6px;font-size:18px}
+    .tile p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
+    .emph{border-left:3px solid var(--gold);padding-left:12px;color:#fef08a}
+    .two{display:grid;grid-template-columns: 1fr 1fr;gap:16px}
+    ul{margin:0 0 0 18px}
+    footer{margin-top:18px;font-size:13px;color:var(--muted);text-align:center}
+    @media (max-width:860px){ .hero{grid-template-columns:1fr} .two{grid-template-columns:1fr} .subtitle{margin-left:0} }
+  
+/* --- Sidebar Layout --- */
+.layout{}
+.sidebar{
+  position:fixed;left:0;top:0;bottom:0;width:280px;z-index:50;
+  background:rgba(15,23,42,.92);border-right:1px solid rgba(148,163,184,.3);
+  padding:16px;overflow:auto;color:#e5e7eb
+}
+.content{margin-left:300px}
+.sb-head{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+.sb-head .crest{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;
+  background:conic-gradient(from 180deg at 50% 50%, rgba(251,191,36,.25), rgba(56,189,248,.25));
+  border:1px solid rgba(251,191,36,.45)
+}
+.sb-title .name{font-weight:700}
+.sb-title .barreaux{font-size:12px;color:#9aa4b2}
+.sb-nav{display:flex;flex-direction:column;gap:8px;margin:10px 0}
+.sb-nav a{display:block;padding:8px 10px;border:1px solid rgba(148,163,184,.3);border-radius:10px;text-decoration:none;color:#e5e7eb;background:linear-gradient(135deg, rgba(2,6,23,.5), rgba(15,23,42,.6))}
+.sb-group{margin-top:8px;margin-bottom:4px;font-size:12px;color:#9aa4b2;text-transform:uppercase;letter-spacing:.06em}
+.sb-footer{margin-top:10px;display:flex;flex-direction:column;gap:8px}
+.sb-btn{display:inline-flex;align-items:center;justify-content:center;padding:10px;border-radius:10px;border:1px solid rgba(148,163,184,.3);text-decoration:none;color:#fff;background:linear-gradient(135deg, rgba(34,197,94,.25), rgba(56,189,248,.25))}
+.menu-toggle{
+  position:fixed;left:12px;top:12px;z-index:60;
+  display:none;padding:8px 10px;border-radius:10px;border:1px solid rgba(148,163,184,.3);
+  background:rgba(15,23,42,.9);color:#e5e7eb
+}
+@media (max-width:900px){
+  .sidebar{transform:translateX(-100%);transition:transform .2s ease}
+  .sidebar.open{transform:translateX(0)}
+  .menu-toggle{display:block}
+  .content{margin-left:0;padding-top:60px}
+}
+</style>
+</head>
+<body>
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Menu latéral">
+      <div class="sb-head">
+        <div class="crest" aria-hidden="true" title="Justice">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3v17M5 10h14M7 10l-3 6a3 3 0 006 0l-3-6zm10 0l-3 6a3 3 0 006 0l-3-6z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="sb-title">
+          <div class="name">Maître Ruffin TCHIAKPE</div>
+          <div class="barreaux">Barreaux de Cotonou & Porto‑Novo</div>
+        </div>
+      </div>
+      <nav class="sb-nav">
+        <a href="index.html">🏠 Accueil</a>
+        <div class="sb-group">Domaines</div>
+        <a href="domaines/droit-immobilier.html">🏢 Droit immobilier</a>
+        <a href="domaines/recouvrement-loyers.html">💳 Recouvrement de dettes de loyer</a>
+        <a href="domaines/recouvrement-de-creances.html">💼 Recouvrement de créances</a>
+        <a href="domaines/droit-civil.html">📜 Droit civil</a>
+        <a href="domaines/droit-commercial.html">📈 Droit commercial</a>
+        <a href="domaines/droit-penal.html">⚖️ Droit pénal</a>
+        <div class="sb-group">À propos</div>
+        <a href="index.html#demarche">Méthode & étapes</a>
+        <a href="index.html#honoraires">Honoraires</a>
+        <a href="index.html#cabinet">Le cabinet</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="sb-footer">
+        <a class="sb-btn" href="tel:00 229 63 84 87 56">📞 00 229 63 84 87 56</a>
+        <a class="sb-btn" href="mailto:gardhbnin@gmail.com">✉️ gardhbnin@gmail.com</a>
+      </div>
+    </aside>
+    <button class="menu-toggle" aria-label="Ouvrir/fermer le menu">☰</button>
+    
+  <div class="content">
+  <main class="wrap">
+    <section class="card">
+      <header class="site">
+        <div class="crest" aria-hidden="true" title="Justice">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Balance de la justice">
+            <path d="M12 3v17M5 10h14M7 10l-3 6a3 3 0 006 0l-3-6zm10 0l-3 6a3 3 0 006 0l-3-6z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h1>Maître Ruffin TCHIAKPE</h1>
+        <span class="subtitle">Avocat aux Barreaux de Cotonou & Porto‑Novo</span>
+        <nav aria-label="Navigation principale">
+          <a href="#domaines">Domaines</a>
+          <a href="#demarche">Démarche</a>
+          <a href="#honoraires">Honoraires</a>
+          <a href="#cabinet">Le cabinet</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <div class="divider"></div>
+
+      <section class="hero" aria-labelledby="intro">
+        <div>
+          <h2 id="intro">Conseil, négociation et contentieux</h2>
+          <p>
+            J’accompagne particuliers, bailleurs, entreprises et commerçants en <span class="emph">droit immobilier</span>, <span class="emph">recouvrement de dettes de loyer</span>, <span class=\"emph\">recouvrement de créances</span>,
+            <span class="emph">droit commercial</span>, <span class="emph">droit civil</span> et <span class="emph">droit pénal</span>. Interventions à Cotonou, Porto‑Novo et sur l’ensemble du territoire.
+          </p>
+          <div class="cta">
+            <a class="btn" href="tel:00 229 63 84 87 56">📞 Appeler : 00 229 63 84 87 56</a>
+            <a class="btn secondary" href="mailto:gardhbnin@gmail.com">✉️ Écrire : gardhbnin@gmail.com</a>
+          </div>
+          <div class="pill">Consultations sur rendez‑vous — Urgences pénales 24/7</div>
+        </div>
+        <div class="tile">
+          <h3>Prise en charge rapide</h3>
+          <p>Analyse préliminaire, stratégie, chiffrage des chances de succès et des coûts. Priorité à la solution amiable lorsqu’elle est possible.</p>
+        </div>
+      </section>
+
+      <section id="domaines" style="margin-top:22px">
+        <h2>Domaines d’intervention</h2>
+        <div class="grid">
+          <article class="tile">
+            <h3><a href="domaines/droit-immobilier.html" style="color:inherit;text-decoration:underline">🏢 Droit immobilier</a></h3>
+            <p>Baux d’habitation et commerciaux, rédaction et résiliation, expulsion, litiges propriétaires‑locataires, copropriété, contentieux fonciers.</p>
+          </article>
+          <article class="tile">
+            <h3><a href="domaines/recouvrement-loyers.html" style="color:inherit;text-decoration:underline">💳 Recouvrement de dettes de loyer</a></h3>
+            <p>Mise en demeure, plan d’apurement, référé, injonction de payer, exécution forcée avec l’huissier, sécurisation des garanties.</p>
+          </article>
+          <article class="tile">
+            <h3><a href="domaines/recouvrement-de-creances.html" style="color:inherit;text-decoration:underline">💼 Recouvrement de créances</a></h3>
+            <p>Factures impayées, injonction de payer, saisies conservatoires et exécution, négociation de plans d’apurement.</p>
+          </article>
+          <article class="tile">
+            <h3><a href="domaines/droit-commercial.html" style="color:inherit;text-decoration:underline">📈 Droit commercial</a></h3>
+            <p>Contrats commerciaux, recouvrement clients, concurrence déloyale, fonds de commerce, baux commerciaux, procédures collectives.</p>
+          </article>
+          <article class="tile">
+            <h3><a href="domaines/droit-civil.html" style="color:inherit;text-decoration:underline">📜 Droit civil</a></h3>
+            <p>Responsabilité civile, obligations et contrats, réparation du préjudice, litiges entre particuliers et professionnels.</p>
+          </article>
+          <article class="tile">
+            <h3><a href="domaines/droit-penal.html" style="color:inherit;text-decoration:underline">⚖️ Droit pénal</a></h3>
+            <p>Assistance en garde à vue, comparutions, défense des victimes et prévenus, constitution de partie civile, aménagement de peines.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="demarche" style="margin-top:22px">
+        <h2>Méthode & étapes</h2>
+        <div class="two">
+          <div class="tile">
+            <h3>1) Évaluation</h3>
+            <p>Entretien, revue des pièces, analyse des risques et des délais. Proposition d’une stratégie adaptée à vos objectifs.</p>
+            <ul>
+              <li>Liste des pièces utile : bail, état des lieux, quittancier, échanges, mise en demeure, procès‑verbaux…</li>
+            </ul>
+          </div>
+          <div class="tile">
+            <h3>2) Action</h3>
+            <p>Négociation amiable priorisée. À défaut, saisine rapide de la juridiction compétente et mesures conservatoires si nécessaire.</p>
+          </div>
+          <div class="tile">
+            <h3>3) Suivi</h3>
+            <p>Transparence sur l’avancement, chiffrage des coûts, préparation des audiences, exécution des décisions de justice.</p>
+          </div>
+          <div class="tile">
+            <h3>4) Prévention</h3>
+            <p>Clauses protectrices, modèles de contrats, check‑lists bailleurs et commerçants pour réduire les risques futurs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="honoraires" style="margin-top:22px">
+        <h2>Honoraires clairs</h2>
+        <div class="two">
+          <div class="tile">
+            <h3>Forfait / Temps passé</h3>
+            <p>Convention d’honoraires écrite avant toute intervention. Forfait pour missions cadrées ou temps passé selon complexité.</p>
+          </div>
+          <div class="tile">
+            <h3>Résultats & frais</h3>
+            <p>Possibilité d’honoraire de résultat. Devis détaillant toutes les diligences, frais d’huissier et débours.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cabinet" style="margin-top:22px">
+        <h2>Le cabinet</h2>
+        <div class="two">
+          <div class="tile">
+            <h3>Implantation</h3>
+            <p>Cotonou & Porto‑Novo — déplacements possibles dans tout le Bénin. Réunions en présentiel ou visioconférence.</p>
+          </div>
+          <div class="tile">
+            <h3>Valeurs</h3>
+            <p>Éthique, réactivité, pédagogie et combativité. Votre intérêt guide chaque choix stratégique.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:22px">
+        <h2>Contact</h2>
+        <div class="two">
+          <div class="tile">
+            <h3>Coordonnées</h3>
+            <p><strong>Téléphone :</strong> <a href="tel:00 229 63 84 87 56">00 229 63 84 87 56</a><br>
+               <strong>Email :</strong> <a href="mailto:gardhbnin@gmail.com">gardhbnin@gmail.com</a><br>
+               <strong>WhatsApp :</strong> <a href="https://wa.me/22963848756">00 229 63 84 87 56</a></p>
+            <p><strong>Adresse :</strong> [Votre adresse] — Cotonou / Porto‑Novo</p>
+          </div>
+          <div class="tile">
+            <h3>Rendez‑vous</h3>
+            <p>Merci de préparer vos pièces (contrat, bail, échanges, décisions, justificatifs). Un rendez‑vous d’évaluation peut être proposé sous 48 h.</p>
+            <div class="cta">
+              <a class="btn" href="tel:00 229 63 84 87 56">Prendre rendez‑vous</a>
+              <a class="btn secondary" href="mailto:gardhbnin@gmail.com?subject=Demande%20de%20rendez-vous">Demander par email</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© <span id="y"></span> Cabinet de Maître Ruffin TCHIAKPE — Avocat aux Barreaux de Cotonou & Porto‑Novo.</p>
+        <p>Les informations de ce site sont données à titre informatif et ne constituent pas un conseil juridique. Chaque situation est unique — consultez‑nous.</p>
+      </footer>
+    </section>
+  </main>
+    </section>
+  </div><!--/content-->
+  </div><!--/layout-->
+
+<script>
+  const sb = document.querySelector('.sidebar');
+  const btn = document.querySelector('.menu-toggle');
+  if (sb && btn){
+    btn.addEventListener('click', ()=> sb.classList.toggle('open'));
+  }
+</script>
+
+</body>
+</html>
